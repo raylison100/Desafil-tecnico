@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+    php:
+        container_name: 'php'
+        build:
+            args:
+                user: php
+                uid: 1000
+            context: ./
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        working_dir: /var/www
+        volumes:
+        - ./:/var/www

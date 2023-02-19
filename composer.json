@@ -1,0 +1,16 @@
+{
+  "require": {
+    "php": "^8.1",
+    "symfony/console": "^4.0",
+    "ext-json": "*",
+    "larapack/dd": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src"
+    },
+    "classmap": [
+      "src"
+    ]
+  }
+}
